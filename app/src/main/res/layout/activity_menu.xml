@@ -1,0 +1,1481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+
+    <ImageView
+        android:id="@+id/IV_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:clickable="true"
+        android:src="@drawable/icon_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/exo"
+        android:text="La Carte"
+        android:textColor="@color/textLightGrey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/IV_back_arrow"
+        app:layout_constraintStart_toEndOf="@id/IV_back_arrow"
+        app:layout_constraintTop_toTopOf="@id/IV_back_arrow" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IV_back_arrow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/TV_fruitsDeMers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="FRUITS DE MER"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/View_fruitsDeMers"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_fruitsDeMers" />
+
+            <TextView
+                android:id="@+id/TV_lesHuitres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/exo"
+                android:text="LES HUÎTRES"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/View_fruitsDeMers"
+                app:layout_constraintTop_toBottomOf="@id/View_fruitsDeMers" />
+
+            <View
+                android:id="@+id/View_lesHuitres"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/lightOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_lesHuitres" />
+
+            <TextView
+                android:id="@+id/TV_les12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/benne"
+                android:text="les 12"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/View_fruitsDeMers"
+                app:layout_constraintTop_toBottomOf="@id/View_lesHuitres" />
+
+            <TextView
+                android:id="@+id/TV_les9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/benne"
+                android:text="les 9"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/TV_les12"
+                app:layout_constraintTop_toBottomOf="@id/View_lesHuitres" />
+
+            <TextView
+                android:id="@+id/TV_les6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/benne"
+                android:text="les 6"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@id/TV_les9"
+                app:layout_constraintTop_toBottomOf="@id/View_lesHuitres" />
+
+            <TextView
+                android:id="@+id/TV_asnelles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Asnelles n°3"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_lesHuitres"
+                app:layout_constraintTop_toBottomOf="@id/TV_les6" />
+
+            <TextView
+                android:id="@+id/TV_asnelles28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="28"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/TV_les12"
+                app:layout_constraintTop_toBottomOf="@id/TV_les12" />
+
+            <TextView
+                android:id="@+id/TV_asnelles22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="22"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/TV_les9"
+                app:layout_constraintTop_toBottomOf="@id/TV_les9" />
+
+            <TextView
+                android:id="@+id/TV_asnelles15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/TV_les6"
+                app:layout_constraintTop_toBottomOf="@id/TV_les6" />
+
+            <TextView
+                android:id="@+id/TV_speciales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Spéciales"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_asnelles"
+                app:layout_constraintTop_toBottomOf="@id/TV_asnelles" />
+
+            <TextView
+                android:id="@+id/TV_speciales34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="34"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/TV_asnelles28"
+                app:layout_constraintTop_toBottomOf="@id/TV_asnelles28" />
+
+            <TextView
+                android:id="@+id/TV_speciales26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="26"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/TV_asnelles22"
+                app:layout_constraintTop_toBottomOf="@id/TV_asnelles22" />
+
+            <TextView
+                android:id="@+id/TV_speciales18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="18"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@id/TV_asnelles15"
+                app:layout_constraintTop_toBottomOf="@id/TV_asnelles15" />
+
+            <TextView
+                android:id="@+id/TV_veules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="'Veules les Roses' n°3"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/TV_speciales"
+                app:layout_constraintTop_toTopOf="@id/TV_speciales" />
+
+            <TextView
+                android:id="@+id/TV_coquillagesCrustaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/exo"
+                android:text="COQUILLAGES &amp; CRUSTACÉS"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_lesHuitres"
+                app:layout_constraintTop_toBottomOf="@id/TV_veules" />
+
+            <View
+                android:id="@+id/View_coquillagesCrustaces"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/lightOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_coquillagesCrustaces" />
+
+            <TextView
+                android:id="@+id/TV_crevettesBio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/benne"
+                android:text="Les 12 crevettes Bio Madagascar"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_coquillagesCrustaces"
+                app:layout_constraintTop_toBottomOf="@id/View_coquillagesCrustaces" />
+
+            <TextView
+                android:id="@+id/TV_crevettes24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="24"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_crevettesBio"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_crevettesBio" />
+
+            <TextView
+                android:id="@+id/TV_bulots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+
+                android:text="Les bulots mayonnaise"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_coquillagesCrustaces"
+                app:layout_constraintTop_toBottomOf="@id/TV_crevettesBio" />
+
+            <TextView
+                android:id="@+id/TV_bulots12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_bulots"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_bulots" />
+
+            <TextView
+                android:id="@+id/TV_plateau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/exo"
+                android:text="PLATEAU"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_lesHuitres"
+                app:layout_constraintTop_toBottomOf="@id/TV_bulots" />
+
+            <View
+                android:id="@+id/View_plateau"
+                android:layout_width="300dp"
+                android:layout_height="1dp"
+                android:background="@color/lightOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_plateau" />
+
+            <TextView
+                android:id="@+id/TV_iode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/benne"
+                android:text="Le Grand Iodé"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_plateau"
+                app:layout_constraintTop_toBottomOf="@id/View_plateau" />
+
+            <TextView
+                android:id="@+id/TV_iodeDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="6 huîtres Asnelles n°3, 6 crevettes Bio, bulots"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toTopOf="@id/TV_iode" />
+
+            <TextView
+                android:id="@+id/TV_iode34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="34"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_iode"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_iode" />
+
+            <TextView
+                android:id="@+id/TV_apartager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="À PARTAGER... OU PAS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_iodeDescription" />
+
+            <View
+                android:id="@+id/View_apartager"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_apartager" />
+
+            <TextView
+                android:id="@+id/TV_charcuterie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Assiette de charcuterie Bellota"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/View_apartager" />
+
+            <TextView
+                android:id="@+id/TV_charcDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="Jambon 36 mois, Chorizo et Saucisson"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/TV_charcuterie"
+                app:layout_constraintTop_toTopOf="@id/TV_charcuterie" />
+
+
+            <TextView
+                android:id="@+id/TV_charcuterie25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="25"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_charcuterie"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_charcuterie" />
+
+            <TextView
+                android:id="@+id/TV_eperlans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Friture d'éperlans"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_coquillagesCrustaces"
+                app:layout_constraintTop_toBottomOf="@id/TV_charcDescription" />
+
+            <TextView
+                android:id="@+id/TV_eperlans12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_eperlans"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_eperlans" />
+
+            <TextView
+                android:id="@+id/TV_accras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Bol d’accras"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_coquillagesCrustaces"
+                app:layout_constraintTop_toBottomOf="@id/TV_eperlans" />
+
+            <TextView
+                android:id="@+id/TV_accras12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_accras"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_accras" />
+
+            <TextView
+                android:id="@+id/TV_rillettes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Rillettes de poisson"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_coquillagesCrustaces"
+                app:layout_constraintTop_toBottomOf="@id/TV_accras" />
+
+            <TextView
+                android:id="@+id/TV_rillettes12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="12"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_rillettes"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_rillettes" />
+
+            <TextView
+                android:id="@+id/TV_aussi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="ET AUSSI"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_rillettes" />
+
+            <View
+                android:id="@+id/View_aussi"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_aussi" />
+
+            <TextView
+                android:id="@+id/TV_cheeseburger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Cheeseburger"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/TV_aussi" />
+
+            <TextView
+                android:id="@+id/TV_burgerFrites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="frites"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/TV_cheeseburger"
+                app:layout_constraintTop_toTopOf="@id/TV_cheeseburger" />
+
+
+            <TextView
+                android:id="@+id/TV_cheeseburger20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_cheeseburger"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_cheeseburger" />
+
+            <TextView
+                android:id="@+id/TV_fishChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Fish and chips"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/TV_burgerFrites" />
+
+            <TextView
+                android:id="@+id/TV_fishChipsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="sauce tartare"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/TV_fishChips"
+                app:layout_constraintTop_toTopOf="@id/TV_fishChips" />
+
+
+            <TextView
+                android:id="@+id/TV_fishChips20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_fishChips"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_fishChips" />
+
+            <ImageView
+                android:id="@+id/IV_wavyOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/wavy_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_fishChipsDescription" />
+
+            <TextView
+                android:id="@+id/TV_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="MENU   42€ *"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/IV_wavyOne" />
+
+            <TextView
+                android:id="@+id/TV_menuDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/exo"
+                android:padding="8dp"
+                android:text="@string/menudescription"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_menu" />
+
+            <TextView
+                android:id="@+id/TV_entrees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="ENTRÉES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_menuDescription" />
+
+            <View
+                android:id="@+id/View_entrees"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_entrees" />
+
+            <TextView
+                android:id="@+id/TV_foisGras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Foie gras maison (sup. +4€)   18"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/View_entrees" />
+
+            <TextView
+                android:id="@+id/TV_foisGrasDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="gelée Porto, hibiscus"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_foisGras" />
+
+            <TextView
+                android:id="@+id/TV_raviolesTourteau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Daikon façon ravioles tourteau   14"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_foisGrasDescription" />
+
+            <TextView
+                android:id="@+id/TV_raviolesTourteauDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="gel Yuzu"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_raviolesTourteau" />
+
+            <TextView
+                android:id="@+id/TV_burratina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Burratina crémeuse, tomates multicolores   14"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_raviolesTourteauDescription" />
+
+            <TextView
+                android:id="@+id/TV_burratinaDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="Basilic"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_burratina" />
+
+            <TextView
+                android:id="@+id/TV_entreeHuitres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Les 6 huîtres « Asnelles » n°3   15"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_burratinaDescription" />
+
+            <TextView
+                android:id="@+id/TV_poissons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="POISSONS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_entreeHuitres" />
+
+            <View
+                android:id="@+id/View_poissons"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_poissons" />
+
+            <TextView
+                android:id="@+id/TV_filetBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Filet de bar (sup. +4€)   27"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/View_poissons" />
+
+            <TextView
+                android:id="@+id/TV_filetBarDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="sauce beurre blanc citronné"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_filetBar" />
+
+            <TextView
+                android:id="@+id/TV_cabillaud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Dos de cabillaud, yaourt Grec et concombres   24"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="19sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_filetBarDescription" />
+
+            <TextView
+                android:id="@+id/TV_cabillaudription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="Jus d'herbes"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_cabillaud" />
+
+            <TextView
+                android:id="@+id/TV_lamelles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Lamelles d'encornet   23"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_cabillaudription" />
+
+            <TextView
+                android:id="@+id/TV_lamellesDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="poivrons, sauce chorizo"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_lamelles" />
+
+            <TextView
+                android:id="@+id/TV_moules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Moules de Bouchot   20"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_lamellesDescription" />
+
+            <TextView
+                android:id="@+id/TV_moulesDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="marinière ou crème au lait cru de Normandie"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_moules" />
+
+            <TextView
+                android:id="@+id/TV_viande"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="VIANDES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_moulesDescription" />
+
+            <View
+                android:id="@+id/View_viande"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_viande" />
+
+            <TextView
+                android:id="@+id/TV_entrecote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Entrecôte Normande (env. 350g) (sup. +5€)   29"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/View_viande" />
+
+            <TextView
+                android:id="@+id/TV_entrecoteDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="sauce béarnaise"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_entrecote" />
+
+            <TextView
+                android:id="@+id/TV_coteCochon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Belle côte de cochon basse température   23"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_entrecoteDescription" />
+
+            <TextView
+                android:id="@+id/TV_coteCochonDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="jus de veau"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_coteCochon" />
+
+            <TextView
+                android:id="@+id/TV_tartare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Tartare de bœuf coupé au couteau   21"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_coteCochonDescription" />
+
+            <TextView
+                android:id="@+id/TV_tartareDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="bien préparé"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_tartare" />
+
+            <TextView
+                android:id="@+id/TV_pokeBowl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/benne"
+                android:text="Poke Bowl du moment   24"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_tartareDescription" />
+
+            <TextView
+                android:id="@+id/TV_pokeBowlDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="Riz, (poisson ou viande marinée ) selon arrivage et assortiment de crudités"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_pokeBowl" />
+
+            <TextView
+                android:id="@+id/TV_garnitureAuChoix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Une garniture au choix"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_pokeBowlDescription" />
+
+            <TextView
+                android:id="@+id/TV_garnitureAuChoixDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="Purée pur beurre / Riz sauvage / Frites\n
+Haricots verts croquants à l'ail / Salade verte"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_garnitureAuChoix" />
+
+            <TextView
+                android:id="@+id/TV_garnitureSup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Garniture supplémentaire   4"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_garnitureAuChoixDescription" />
+
+            <TextView
+                android:id="@+id/TV_fromages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="FROMAGES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_garnitureSup" />
+
+            <View
+                android:id="@+id/View_fromages"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_fromages" />
+
+            <TextView
+                android:id="@+id/TV_pontEveque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Le Pont l’Évêque « Martin »   9"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/View_fromages" />
+
+            <TextView
+                android:id="@+id/TV_desserts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="DESSERTS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_pontEveque" />
+
+            <View
+                android:id="@+id/View_desserts"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_desserts" />
+
+            <TextView
+                android:id="@+id/TV_profiterole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Profiterole maison   10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/View_desserts" />
+
+            <TextView
+                android:id="@+id/TV_profiteroleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="chocolat Valrhona"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_profiterole" />
+
+            <TextView
+                android:id="@+id/TV_tarteletteCitron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Tartelette citron   9"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_profiteroleDescription" />
+
+            <TextView
+                android:id="@+id/TV_tarteletteCitronDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="épices et tonka"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_tarteletteCitron" />
+
+            <TextView
+                android:id="@+id/TV_pommeCaramel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Pomme cuite au caramel   9"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_tarteletteCitronDescription" />
+
+            <TextView
+                android:id="@+id/TV_pommeCaramelDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="sablé fleur de sel, glace vanille"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_pommeCaramel" />
+
+            <TextView
+                android:id="@+id/TV_trouNormand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Trou Normand   10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_pommeCaramelDescription" />
+
+            <TextView
+                android:id="@+id/TV_trouNormandDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="2 boules de sorbet pomme bio, Calvados"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_trouNormand" />
+
+            <TextView
+                android:id="@+id/TV_cafeGourmand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Café gourmand, Thé gourmand   10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_trouNormandDescription" />
+
+            <TextView
+                android:id="@+id/TV_sorbet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Sorbets et Glaces Bio « Terre Adélice »   7/9"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_cafeGourmand" />
+
+            <TextView
+                android:id="@+id/TV_sorbetDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="2 boules / 3 boules\n
+vanille, café, chocolat, caramel beurre salé, praliné, passion, citron , fraise, framboise, coco, pomme"
+                android:textAlignment="center"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/TV_sorbet" />
+
+            <ImageView
+                android:id="@+id/IV_wavyTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/wavy_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_sorbetDescription" />
+
+            <TextView
+                android:id="@+id/TV_glaces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="GLACES &amp; SORBETS BIO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/IV_wavyTwo" />
+
+            <View
+                android:id="@+id/View_glaces"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_glaces" />
+
+            <TextView
+                android:id="@+id/TV_chantilly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Supplément Chantilly"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/View_glaces" />
+
+            <TextView
+                android:id="@+id/TV_chantillyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="1,5"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_chantilly"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_chantilly" />
+
+            <TextView
+                android:id="@+id/TV_chocolat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Chocolat ou Café Liégeois ou\nDame blanche"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/TV_chantilly" />
+
+            <TextView
+                android:id="@+id/TV_chocolatPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_chocolat"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_chocolat" />
+
+            <ImageView
+                android:id="@+id/IV_wavyThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/wavy_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_chocolat" />
+
+            <TextView
+                android:id="@+id/TV_menuEnfant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/exo"
+                android:text="PLATS ENFANT"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/IV_wavyThree" />
+
+            <View
+                android:id="@+id/View_menuEnfant"
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:background="@color/darkOrange"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_menuEnfant" />
+
+            <TextView
+                android:id="@+id/TV_miniFishChips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/benne"
+                android:text="Mini fish and chips"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/View_menuEnfant" />
+
+            <TextView
+                android:id="@+id/TV_miniFishChipsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_miniFishChips"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_miniFishChips" />
+
+            <TextView
+                android:id="@+id/TV_nuggets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Nuggets de poulet"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/TV_miniFishChips" />
+
+            <TextView
+                android:id="@+id/TV_nuggetsPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_nuggets"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_nuggets" />
+
+            <TextView
+                android:id="@+id/TV_jambon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="Jambon au torchon"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/TV_iode"
+                app:layout_constraintTop_toBottomOf="@id/TV_nuggets" />
+
+            <TextView
+                android:id="@+id/TV_jambonDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/benne"
+                android:text="purée maison"
+                android:textColor="@color/textLightGrey"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/TV_jambon"
+                app:layout_constraintTop_toTopOf="@id/TV_jambon" />
+
+            <TextView
+                android:id="@+id/TV_jambonPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/benne"
+                android:text="10"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@id/TV_jambon"
+                app:layout_constraintEnd_toEndOf="@id/TV_speciales34"
+                app:layout_constraintTop_toTopOf="@id/TV_jambon" />
+
+            <ImageView
+                android:id="@+id/IV_wavyFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/wavy_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/TV_jambonDescription" />
+
+            <TextView
+                android:id="@+id/TV_menuInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/benne"
+                android:padding="8dp"
+                android:text="Prix nets en euros, taxes et service compris.\n
+La maison n’accepte pas les chèques.\n
+Tous les plats sont susceptibles de contenir des allergènes (voir listes affichées)\n\n
+L'abus d'alcool est dangereux pour la santé, consommer avec modération."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/IV_wavyFour" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue">
+
+        <ImageView
+            android:id="@+id/wineColor"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/white_wine_color" />
+
+        <TextView
+            android:id="@+id/wineName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/benne"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/wineColor"
+            app:layout_constraintStart_toEndOf="@id/wineColor"
+            app:layout_constraintTop_toTopOf="@id/wineColor"
+            tools:text="Wine Name Here" />
+
+        <TextView
+            android:id="@+id/wineDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/benne"
+            android:textColor="@color/textLightGrey"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/wineName"
+            app:layout_constraintTop_toTopOf="@id/wineName"
+            tools:text="Wine Description Here" />
+
+        <TextView
+            android:id="@+id/winePrice75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/benne"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/wineName"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="30" />
+
+        <TextView
+            android:id="@+id/winePrice12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/benne"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/wineName"
+            app:layout_constraintEnd_toStartOf="@id/winePrice75"
+            tools:text="9" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

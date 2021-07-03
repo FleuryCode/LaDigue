@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <ImageView
+        android:id="@+id/IV_back_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:padding="20dp"
+        android:src="@drawable/icon_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/exo"
+        android:text="Les Vins"
+        android:textColor="@color/textLightGrey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/IV_back_arrow"
+        app:layout_constraintStart_toEndOf="@id/IV_back_arrow"
+        app:layout_constraintTop_toTopOf="@id/IV_back_arrow" />
+
+    <Button
+        android:id="@+id/buttonChampagne"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/exo"
+        android:text="CHAMPAGNES AOC"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IV_back_arrow" />
+
+    <Button
+        android:id="@+id/buttonBlanc"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/exo"
+        android:text="VINS BLANCS"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonChampagne" />
+
+    <Button
+        android:id="@+id/buttonRouge"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/exo"
+        android:text="VINS ROUGES"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonBlanc" />
+
+
+    <Button
+        android:id="@+id/buttonRose"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/exo"
+        android:text="VINS ROSÉS"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonRouge" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

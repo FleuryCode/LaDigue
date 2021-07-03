@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">La Digue</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="Hours">OUVERT DU LUNDI AU DIMANCHE
+        <br></br>
+        DE <b>10:00</b> À <b>23:00</b></string>
+    <string name="Phone_number"><u>+33 2 31 88 61 47</u></string>
+    <string name="menudescription">ENTRÉE + PLAT + FROMAGE OU DESSERT
+        <br></br>
+        *UN SUPPLÉMENT EST À PRÉVOIR SUR CERTAINS PLATS</string>
+</resources>

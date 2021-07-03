@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jsquaredstudios.ladigue">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ladigue_logo_square"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ladigue_logo_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LaDigue">
+        <activity android:name=".RoseActivity"></activity>
+        <activity android:name=".RougeActivity" />
+        <activity android:name=".BlancActivity" />
+        <activity android:name=".ChampagneActivity" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="Contact"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".VinsActivity"
+            android:label="Les Vins"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MenuActivity"
+            android:label="Le Menu"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
